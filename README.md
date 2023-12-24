@@ -56,7 +56,7 @@ advurl_shortner.short("https://google.com/",second_url="https://bing.com/", weig
 ```
 ### Getting shortned URL parameters and visit statistics:
 ```python
-advurl_shortner.stat("https://liil.bid/kdRz","1234x")
+advurl_shortner.stat("https://illi.cfd/H","aaa")
 # Returns the parameters and visit statistics of the shortened URL stored with password "1234x".
 # Example:
 #{
