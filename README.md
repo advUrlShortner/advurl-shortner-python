@@ -40,16 +40,17 @@ advurl_shortner.short("https://google.com/", pass="1234x")
 advurl_shortner.short("https://google.com/", ttl=86400)
 # Returns the shortened URLs., after 24 hours (86400 seconds) will return "The Link You Followed Has Expired"
 
+advurl_shortner.short("https://google.com/", ttl=86400, second_url="https://bing.com/")
+# Returns the shortened URLs., after 24 hours (86400 seconds)  shortned link will redirect to second_url
+
 advurl_shortner.short("https://google.com/",second_url="https://bing.com/")
 # Returns shortened URLs. The shortened link is randomly redirected to one of the provided URLs.
 
-advurl_shortner.short("https://google.com/",second_url="https://bing.com/", "weights"=[0.3, 0.7])
+advurl_shortner.short("https://google.com/",second_url="https://bing.com/", weights=[0.3, 0.7])
 # Returns shortened URLs.
 # The shortened link is randomly (weighted by weight parameter) redirected to one of the provided URLs.
 # approximately 30% to "https://google.com/ and 70% to "https://bing.com/"
 
-advurl_shortner.short("https://google.com/", ttl=86400, second_url="https://bing.com/")
-# Returns the shortened URLs., after 24 hours (86400 seconds)  shortned link will redirect to second_url
 
 
 ```
