@@ -1,6 +1,8 @@
-# advurl_shortner
+# advurl_shortner - Advanced URL Shortner for Python
 
-Python Library to help you short urls with advanced options. Multiple domains, URL TTL, visit statistics etc.
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
+Python Library to help you short urls with advanced options. Multiple domains, URL TTL, split tests, visit statistics etc.
 An extended native Python wrapper for [AdvUrlShortner API](https://github.com/advUrlShortner/API/) with minimal requirements. Supports all methods and types of responses.
 
 ## Features
@@ -28,10 +30,10 @@ import advurl_shortner
 
 advurl_shortner.short("https://google.com/")
 # Returns the shortened URLs in JSON
-# Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}
+# Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}XX
 
 advurl_shortner.short("https://google.com/", password="1234x")
-# Returns shortened URLs, sets a password to access statistics and shortened URL parameters.
+# Returns shortened URLs, sets a password to access visiting statistics and shortened URL parameters.
 
 advurl_shortner.short("https://google.com/", ttl=86400)
 # Returns the shortened URLs., after 24 hours (86400 seconds) will return "The Link You Followed Has Expired"
