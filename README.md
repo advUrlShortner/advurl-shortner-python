@@ -15,6 +15,15 @@ An extended native Python wrapper for [AdvUrlShortner API](https://github.com/ad
 - Password-protected statistics of visits to a shortened URL
 - Password protected shortened URL parameters (TTL, second URL, etc.)
 
+## Installation
+
+In order install this package, simply run:
+
+```bash
+pip install advurl_shortner
+```
+
+
 ## Usage
 
 To use shorten_url, you first need to import the package:
