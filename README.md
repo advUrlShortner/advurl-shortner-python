@@ -1,13 +1,15 @@
 # advurl_shortner
 
 Python Library to help you short urls with advanced options. Multiple domains, URL TTL, visit statistics etc.
+An extended native Python wrapper for [AdvUrlShortner API](https://github.com/advUrlShortner/API/) with minimal requirements. Supports all methods and types of responses.
 
 ## Features
+
 - Easy to use
 - Multiple domains
 - Link TTL (Time-To-Live) in seconds
 - Redirect to second URL after primary URL expires (TTL)
-- Randomized and weighted randomnized redirect to different URLs
+- Randomized and weighted randomnized redirect to different URLs (split tests etc.)
 - Password-protected statistics of visits to a shortened URL
 - Password protected shortened URL parameters (TTL, second URL, etc.)
 
@@ -21,10 +23,12 @@ import advurl_shortner
 
 
 ### Shorten URL:
+
 ```python
 
 advurl_shortner.short("https://google.com/")
-# Returns the shortened URLs
+# Returns the shortened URLs in JSON
+# Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}
 
 advurl_shortner.short("https://google.com/", password="1234x")
 # Returns shortened URLs, sets a password to access statistics and shortened URL parameters.
@@ -47,6 +51,7 @@ advurl_shortner.short("https://google.com/",second_url="https://bing.com/", weig
 
 ```
 ### Getting shortned URL parameters and visit statistics:
+
 ```python
 advurl_shortner.stat("https://illi.cfd/H","aaa")
 # Returns the parameters and visit statistics of the shortened URL stored with password "1234x".
