@@ -2,14 +2,14 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
-Python Library to help you short urls with advanced options. Multiple domains, URL TTL, split tests, visit statistics etc.
+Open-source, easy-to-use, powerful python library to help you to shorten urls with advanced options. Supports multiple domains, URL TTL, split tests, visit statistics etc.
 An extended native Python wrapper for [AdvUrlShortner API](https://github.com/advUrlShortner/API/) with minimal requirements. Supports all methods and types of responses.
 
 ## Features
 
 - Easy to use
 - Multiple domains
-- Link TTL (Time-To-Live) in seconds
+- URL TTL (Time-To-Live) in seconds. Auto expiry URL after some time.
 - Redirect to second URL after primary URL expires (TTL)
 - Randomized and weighted randomnized redirect to different URLs (split tests etc.)
 - Password-protected statistics of visits to a shortened URL
