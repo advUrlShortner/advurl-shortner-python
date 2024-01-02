@@ -1,4 +1,4 @@
-# advurl_shortner - Advanced URL Shortner for Python
+# advurl_shortner - Advanced URL Shortener for Python
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
@@ -48,7 +48,7 @@ advurl_shortner.short("https://google.com/", ttl=86400)
 # Returns the shortened URLs., after 24 hours (86400 seconds) will return "The Link You Followed Has Expired"
 
 advurl_shortner.short("https://google.com/", ttl=86400, second_url="https://bing.com/")
-# Returns the shortened URLs., after 24 hours (86400 seconds)  shortned link will redirect to second_url
+# Returns the shortened URLs., after 24 hours (86400 seconds)  shortened link will redirect to second_url
 
 advurl_shortner.short("https://google.com/",second_url="https://bing.com/")
 # Returns shortened URLs. The shortened link is randomly redirected to one of the provided URLs.
@@ -61,7 +61,7 @@ advurl_shortner.short("https://google.com/",second_url="https://bing.com/", weig
 
 
 ```
-### Getting shortned URL parameters and visit statistics:
+### Getting short URL parameters and visit statistics:
 
 ```python
 advurl_shortner.stat("https://illi.cfd/H","aaa")
