@@ -1,9 +1,11 @@
 import requests
 
-def short(url, password=None, second_url=None, ttl=None, weights=None):
+def short(url, password=None, second_url=None, description=None, ttl=None, weights=None):
     data = {"url": url}
     if password:
         data["pass"]=password
+    if description:
+        data["description"]=description
     if second_url:
         data["second_url"]=second_url
     if ttl:
