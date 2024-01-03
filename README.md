@@ -39,7 +39,7 @@ import advurl_shortner
 
 advurl_shortner.short("https://google.com/")
 # Returns the shortened URLs in JSON
-# Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}XX
+# Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}
 
 advurl_shortner.short("https://google.com/", description="Google search engine", password="1234x")
 # Returns shortened URLs, sets a password to access visiting statistics and shortened URL parameters.
