@@ -41,7 +41,7 @@ advurl_shortner.short("https://google.com/")
 # Returns the shortened URLs in JSON
 # Example: {"urls": ["https://liii.pw/N", "https://illi.ink/N", "https://illi.cfd/N"]}XX
 
-advurl_shortner.short("https://google.com/", password="1234x")
+advurl_shortner.short("https://google.com/", description="Google search engine", password="1234x")
 # Returns shortened URLs, sets a password to access visiting statistics and shortened URL parameters.
 
 advurl_shortner.short("https://google.com/", ttl=86400)
@@ -73,6 +73,7 @@ advurl_shortner.stat("https://illi.cfd/H","aaa")
 #	"ttl": null,
 #	"date_created": "1703411470",
 #	"weights": null,
+#	"description":"Yahoo search engine",
 #	"visits": 4,
 #	"primary_url_expired": false
 #}
