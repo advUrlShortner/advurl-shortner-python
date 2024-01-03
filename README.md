@@ -2,7 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
-Open-source, easy-to-use, powerful python library to help you to shorten urls with advanced options. Supports multiple domains, URL TTL, split tests, visit statistics etc.
+Easy-to-use, powerful python library to help you to shorten urls with advanced options. Supports multiple domains, URL TTL, split tests, visit statistics etc.
 An extended native Python wrapper for [AdvUrlShortner API](https://github.com/advUrlShortner/API/) with minimal requirements. Supports all methods and types of responses.
 
 ## Features
